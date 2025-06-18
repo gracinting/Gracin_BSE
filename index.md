@@ -90,6 +90,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 [![Watch the video](https://img.youtube.com/vi/U0qRxUKxOFM/0.jpg)](https://www.youtube.com/watch?v=U0qRxUKxOFM)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U0qRxUKxOFM?si=bUH9VKvnzwFAl2p7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 
