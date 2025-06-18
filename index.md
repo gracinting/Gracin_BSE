@@ -88,7 +88,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Starter Project: <a href="https://www.amazon.com/Classic-Electronic-Soldering-Tetris-Machine/dp/B07HB3HPPJ/ref=asc_df_B07HB3HPPJ?mcid=b00b7893f57d3a19abc2f6c187ac48cd&hvocijid=3301114880548506296-B07HB3HPPJ-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=3301114880548506296&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032183&hvtargid=pla-2281435179498&th=1"> Retro Arcade Machine ($18.99) </a>
 
-[![Watch the video](https://www.img.youtube.com/watch?v=U0qRxUKxOFM)](https://www.youtube.com/watch?v=U0qRxUKxOFM)
+[![Watch the video](https://img.youtube.com/vi/U0qRxUKxOFM/0.jpg)](https://www.youtube.com/watch?v=U0qRxUKxOFM)
+
 
 
 
