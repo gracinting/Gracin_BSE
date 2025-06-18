@@ -1,4 +1,4 @@
-# Smart Glasses
+e# Smart Glasses
 Smart glasses are wearable devices that combine traditional eyewear with advanced technology, integrating features like heads-up displays, cameras, microphones, and sensors. They enable users to access information, capture media, and interact with augmented reality or voice assistants seamlessly, all while keeping their hands free. Designed for both everyday and specialized use, smart glasses blend digital functionality with a familiar form factor.
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -88,7 +88,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Starter Project: <a href="https://www.amazon.com/Classic-Electronic-Soldering-Tetris-Machine/dp/B07HB3HPPJ/ref=asc_df_B07HB3HPPJ?mcid=b00b7893f57d3a19abc2f6c187ac48cd&hvocijid=3301114880548506296-B07HB3HPPJ-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=3301114880548506296&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032183&hvtargid=pla-2281435179498&th=1"> Retro Arcade Machine ($18.99) </a>
 
-[![Watch the video](https://img.youtube.com/vi/y3VAmNlER5Y/0.jpg)](https://www.youtube.com/watch?v=y3VAmNlER5Y)
+[![Watch the video](https://www.youtube.com/watch?v=U0qRxUKxOFM)](https://www.youtube.com/watch?v=U0qRxUKxOFM)
 
 
 
