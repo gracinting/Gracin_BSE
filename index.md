@@ -100,8 +100,8 @@ Ideal for beginners, this starter project taught me soldering and general electr
 ![Preview](images/Starter_preview_trans.png)
 
 
-<img src="images/starter_schematic.jpg" width="300" height="200">
-![Schematic](images/starter_schematic.jpg)
+<img src="images/starter_schematic.jpg" width="600" height="400">
+[//]: # ![Schematic](images/starter_schematic.jpg)
 
 <!-- # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
