@@ -1,7 +1,10 @@
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-  # Smart Glasses
+<div style="float: right; margin-left: 20px;">
   <img src="images/BSE_Headshot_crop.png" alt="Profile Picture" width="100"/>
 </div>
+
+# Smart Glasses
+
+<div style="clear: both;"></div>
 
 Smart glasses are wearable devices that combine traditional eyewear with advanced technology, integrating features like heads-up displays, cameras, microphones, and sensors. They enable users to access information, capture media, and interact with augmented reality or voice assistants seamlessly, all while keeping their hands free. Designed for both everyday and specialized use, smart glasses blend digital functionality with a familiar form factor.
 
