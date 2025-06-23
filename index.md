@@ -1,4 +1,4 @@
-# Smart Glasses
+e# Smart Glasses
 Smart glasses are wearable devices that combine traditional eyewear with advanced technology, integrating features like heads-up displays, cameras, microphones, and sensors. They enable users to access information, capture media, and interact with augmented reality or voice assistants seamlessly, all while keeping their hands free. Designed for both everyday and specialized use, smart glasses blend digital functionality with a familiar form factor.
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -98,7 +98,7 @@ This starter project was designed to teach the fundamentals of soldering through
 Ideal for beginners, this starter project taught me soldering and general electric principles. 
 
 
-<img src="images/Starter_preview_trans.png" width="500" height="750">
+<img src="images/Starter_preview_trans.png" width="750" height="500">
 
 <img src="images/starter_schematic.jpg" width="600" height="400">
 [//]: # (![Preview](images/Starter_preview_trans.png) ![Schematic](images/starter_schematic.jpg))
