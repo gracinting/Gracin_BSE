@@ -1,5 +1,5 @@
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <h1 style="margin: 0; padding: 0; font-size: 3.5em;">Smart Glasses</h1>
+  <h1 style="margin: 0; padding: 0; font-size: 50px;">Smart Glasses</h1>
   <img src="images/BSE_Headshot_crop.png" alt="Profile Picture" width="100" style="margin-left: 20px;"/>
 </div>
 
