@@ -99,6 +99,8 @@ Ideal for beginners, this starter project taught me soldering and general electr
 
 ![Preview](images/Starter_preview_trans.png)
 
+
+<img src="images/starter_schematic.jpg" width="300" height="200">
 ![Schematic](images/starter_schematic.jpg)
 
 <!-- # Other Resources/Examples
