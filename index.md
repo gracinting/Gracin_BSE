@@ -1,5 +1,5 @@
 <div align="right">
-  <img src="starter_preview.jpg" alt="Profile Picture" width="100"/>
+  <img src="BSE_Headshot.JPG" alt="Profile Picture" width="100"/>
 </div>
 
 # Smart Glasses
