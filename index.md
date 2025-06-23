@@ -1,7 +1,7 @@
 e# Smart Glasses
 Smart glasses are wearable devices that combine traditional eyewear with advanced technology, integrating features like heads-up displays, cameras, microphones, and sensors. They enable users to access information, capture media, and interact with augmented reality or voice assistants seamlessly, all while keeping their hands free. Designed for both everyday and specialized use, smart glasses blend digital functionality with a familiar form factor.
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
+<!--- You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
