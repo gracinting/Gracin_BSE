@@ -11,7 +11,7 @@ Smart glasses are wearable devices that combine traditional eyewear with advance
 | Gracin T | Los Gatos High | Electrical Engineering | Incoming Senior
 
 
-![Headstone Image](logo.svg)
+<!-- ![Headstone Image](logo.svg)-->
   
 <!-- # Final Milestone
 
@@ -43,7 +43,7 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone -->
 
-# First Milestone - Raspi & Tensorflow
+# First Milestone - RasPI & Tensorflow
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
