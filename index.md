@@ -1,4 +1,4 @@
-e# Smart Glasses
+# Smart Glasses
 Smart glasses are wearable devices that combine traditional eyewear with advanced technology, integrating features like heads-up displays, cameras, microphones, and sensors. They enable users to access information, capture media, and interact with augmented reality or voice assistants seamlessly, all while keeping their hands free. Designed for both everyday and specialized use, smart glasses blend digital functionality with a familiar form factor.
 
 
@@ -95,7 +95,6 @@ Ideal for beginners, this starter project taught me soldering and general electr
 <img src="images/Starter_preview_trans.png" width="750" height="500">
 
 <img src="images/starter_schematic.jpg" width="600" height="400">
-[//]: # (![Preview](images/Starter_preview_trans.png) ![Schematic](images/starter_schematic.jpg))
 
 <!-- # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
