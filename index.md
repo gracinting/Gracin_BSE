@@ -48,12 +48,8 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+## Progress
+As I progress, I'll find more purposes for the Smart Glasses but as of right now, I want the glasses to be able to detect objects in front of them, read text, and take photos/videos that will be uploaded to either computer or web. So far, I've setup my Raspberry Pi and connected it to my computer via Tiger VNC. The main difficutly I had with Tiger VNC was the wifi. TigerVNC is a remote display system that allows you to control a computer's desktop from another device. It works by using a client-server model, where the server shares its screen and the client displays and controls it. TigerVNC utilizes the Remote Framebuffer protocol (RFB) to transmit screen updates and user input (keyboard and mouse) between the server and client. Essentially, I can remotely connect my laptop to the Pi without needing a nest of cables. Other than that, I just needed to plug in a bunch of cables.
 
 ## Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
