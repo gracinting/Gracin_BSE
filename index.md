@@ -57,9 +57,9 @@ Adaptive Thresholding calculates thresholds for small regions of the image. This
 
 ## Sample Images
 
-<img src="images/Hello_world5_original_resized.png" width="400" height="400">
+<img src="images/Hello_World5_original_resized.png" width="400" height="400">
 <img src="images/Hello_World5_binary_threshold_resized.png" width="400" height="400">
-<img src="images/Hello_world5_adaptive_threshold_resized.png" width="400" height="400">
+<img src="images/Hello_World5_adaptive_threshold_resized.png" width="400" height="400">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" 
     title="YouTube video player" frameborder="0" 
