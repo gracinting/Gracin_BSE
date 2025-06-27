@@ -72,10 +72,6 @@ Adaptive Thresholding calculates thresholds for small regions of the image. This
   </tr>
 </table>
 
-<img src="images/sample_og.png" width="250" height="250">
-<img src="images/sample_binary.png" width="250" height="250">
-<img src="images/sample_adaptive.png" width="250" height="250">
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" 
     title="YouTube video player" frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
