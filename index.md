@@ -23,13 +23,39 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- What you hope to learn in the future after everything you've learned at BSE -->
 
 
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+## Progress
+Since my last update, I’ve made significant technical progress that brings the Smart Glasses closer to being a functional assistive tool. I successfully installed TensorFlow 2 on the Raspberry Pi, which lays the foundation for implementing real-time object detection. I also integrated OCR (Optical Character Recognition) capabilities using adaptive thresholding, which dramatically improved text readability in various lighting conditions—a crucial step for reading signs, labels, or printed documents through the glasses.
+
+## OCR
+OCR, or Optical Character Recognition, is the process of converting images of text—such as signs, labels, or documents—into machine-encoded text that can be processed, stored, or read aloud.
+
+### How it works
+OCR works by analyzing an image and detecting patterns that resemble characters. The process typically involves several steps:
+
+- Image Preprocessing – This includes converting the image to grayscale and applying thresholding to isolate the text from the background.
+
+- Segmentation – The software identifies and separates lines, words, and characters.
+
+- Feature Extraction – The program extracts distinct features of each character (like curves, lines, and intersections).
+
+- Character Recognition – Using a trained model (often based on machine learning), the software compares extracted features to known characters.
+
+- Post-Processing – Corrects errors based on context, like recognizing "1" instead of "I".
+
+### Binary vs Adaptive Threshold
+Thresholding is used to convert grayscale images into binary (black and white) images, which simplifies the text detection process.
+
+Binary Thresholding uses a single global value. Pixels brighter than the threshold become white; darker pixels become black. This works well in consistent lighting but fails when the image has shadows or varying brightness.
+
+Adaptive Thresholding calculates thresholds for small regions of the image. This means different areas of the image can have different threshold values, making it much more effective in uneven lighting conditions—like reading a sign outdoors with shadows.
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" 
     title="YouTube video player" frameborder="0" 
@@ -41,22 +67,7 @@ For your second milestone, explain what you've worked on since your previous mil
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone -->
-
-# First Milestone - RasPI
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OAWN1qmHV5M?si=2GBFiyWOyTis4gh7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-## Progress
-As I progress, I'll find more purposes for the Smart Glasses but as of right now, I want the glasses to be able to detect objects in front of them, read text, and take photos/videos that will be uploaded to either computer or web. So far, I've setup my Raspberry Pi and connected it to my computer via Tiger VNC. The main difficutly I had with Tiger VNC was the wifi. TigerVNC is a remote display system that allows you to control a computer's desktop from another device. It works by using a client-server model, where the server shares its screen and the client displays and controls it. TigerVNC utilizes the Remote Framebuffer protocol (RFB) to transmit screen updates and user input (keyboard and mouse) between the server and client. Essentially, I can remotely connect my laptop to the Pi without needing a nest of cables. Other than that, I just needed to plug in a bunch of cables.
-
-## Schematics 
-
-#### Raspberry Pi
-
-<img src="images/RasPi_Schematic.png" width="600" height="400">
-
+- What needs to be completed before your final milestone
 
 ## Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
@@ -73,6 +84,23 @@ void loop() {
 
 }
 ```
+
+# First Milestone - RasPI
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OAWN1qmHV5M?si=2GBFiyWOyTis4gh7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Progress
+As I progress, I'll find more purposes for the Smart Glasses but as of right now, I want the glasses to be able to detect objects in front of them, read text, and take photos/videos that will be uploaded to either computer or web. So far, I've setup my Raspberry Pi and connected it to my computer via Tiger VNC. The main difficutly I had with Tiger VNC was the wifi. TigerVNC is a remote display system that allows you to control a computer's desktop from another device. It works by using a client-server model, where the server shares its screen and the client displays and controls it. TigerVNC utilizes the Remote Framebuffer protocol (RFB) to transmit screen updates and user input (keyboard and mouse) between the server and client. Essentially, I can remotely connect my laptop to the Pi without needing a nest of cables. Other than that, I just needed to plug in a bunch of cables.
+
+## Schematics 
+
+#### Raspberry Pi
+
+<img src="images/RasPi_Schematic.png" width="600" height="400">
+
+
+
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
