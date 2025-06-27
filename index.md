@@ -57,6 +57,21 @@ Adaptive Thresholding calculates thresholds for small regions of the image. This
 
 ## Sample Images
 
+<table>
+  <tr>
+    <td><img src="images/sample_og.png" width="250" height="250" alt="Hello World Original"></td>
+    <td>This is the original image with red text on a green background.</td>
+  </tr>
+  <tr>
+    <td><img src="images/sample_binary.png" width="250" height="250" alt="Hello World Binary Threshold"></td>
+    <td>This image shows a handwritten "Hello World" in black on a white background, likely a result of a binary threshold.</td>
+  </tr>
+  <tr>
+    <td><img src="images/sample_adaptive.png" width="250" height="250" alt="Hello World Adaptive Threshold"></td>
+    <td>This image displays "Hello World" with a black outline and white fill, suggesting an adaptive threshold was applied.</td>
+  </tr>
+</table>
+
 <img src="images/sample_og.png" width="250" height="250">
 <img src="images/sample_binary.png" width="250" height="250">
 <img src="images/sample_adaptive.png" width="250" height="250">
