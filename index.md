@@ -57,7 +57,7 @@ Adaptive Thresholding calculates thresholds for small regions of the image. This
 
 ## Code for Adaptive Threshold
 This is the isolated for the OCR with the Adaptive Threshold
-```
+```python3
 import cv2
 import numpy as np
 from picamera2 import Picamera2
