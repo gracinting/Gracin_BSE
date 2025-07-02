@@ -62,7 +62,7 @@ Binary Thresholding uses a single global value. Pixels brighter than the thresho
 Adaptive Thresholding calculates thresholds for small regions of the image. This means different areas of the image can have different threshold values, making it much more effective in uneven lighting conditions—like reading a sign outdoors with shadows.
 
 ## Code for Adaptive Threshold
-This is the isolated for the OCR with the Adaptive Threshold
+This is the isolated for the OCR with the Adaptive Threshold. The program takes in frames from the Video Camera and then applies multiple filters and thresholds to achieve the black and white look. Then when the user clicks 't' it runs the ocr via pytesseract.
 ```python3
 import cv2
 import numpy as np
@@ -208,6 +208,7 @@ window.mainloop()
 ## Code
 Here's the isolated Object Detection code. If you want to run this yourself, ensure that you have downloaded the correct packages via
 [this website.](https://learn.adafruit.com/running-tensorflow-lite-on-the-raspberry-pi-4/overview)
+A lot of this is accomplished by the pre-configured package but I added some slight modifications. For one, the user has to click 'o' to enable and disable the Object Detection. In addition, there were some configuring modifications I needed to do to make my future life easier.
 
 ```python3
 # SPDX-FileCopyrightText: 2021 Limor Fried/ladyada for Adafruit Industries
