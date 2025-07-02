@@ -617,7 +617,6 @@ The main difficulty I encountered during the initial setup was specifically with
   <img src="images/RasPi_Schematic.png" width="750" height="500" alt="Starter Preview">
 </a>
 
-<img src="images/RasPi_Schematic.png" width="600" height="400">
 
 
 
@@ -651,10 +650,6 @@ Ideal for beginners, this starter project taught me soldering and general electr
 <a href="https://www.amazon.ae/Gxcdizx-Hand-held-Practise-Soldering-Electronics/dp/B0851HFNYM">
   <img src="images/starter_schematic.jpg" width="750" height="500" alt="Starter Preview">
 </a>
-
-<img src="images/Starter_preview_trans.png" width="750" height="500">
-
-<img src="images/starter_schematic.jpg" width="600" height="400">
 
 <!-- # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
