@@ -573,13 +573,41 @@ if __name__ == "__main__":
         sys.exit(1)
 ```
 
+## Object Detection Challenges
+Developing the object detection code presented several hurdles for me, especially getting it to run smoothly on a Raspberry Pi.
+
+Firstly, real-time performance was a constant battle. Running a deep learning model like MobileNetV2 on such a small device is incredibly demanding. I struggled to get a decent frame rate, even with optimizations like the tflite option. It was a fine line between fast inference and acceptable accuracy, and managing the Pi's limited CPU and memory to prevent crashes or freezes was always on my mind. Making sure the camera stream started and stopped cleanly without hogging resources was also a recurring challenge.
+
+Then there was the Tkinter user interface and video integration. Getting that live camera feed to display without stuttering was tricky. I used root.after to schedule updates, but timing it perfectly with the camera's frame rate and the model's processing time took a lot of tweaking. Plus, I wanted the display to be responsive, so making the video and any overlays (like detection text) scale correctly when the window was resized was a complex task. Adjusting font sizes dynamically based on the window size was a good solution, but getting those calculations just right so the text always fit and was readable required careful attention.
+
+I also spent a lot of time fine-tuning the robustness of the detection logic. Those CONFIDENCE_THRESHOLD and PERSISTANCE_THRESHOLD values were critical. Too low, and I'd get a flurry of false positives; too high, and detections would flicker or be missed entirely. The "persistence" logic helped stabilize things, but finding that sweet spot for PERSISTANCE_THRESHOLD was definitely an iterative process of trial and error. And when nothing was detected, I had to ensure the last_seen list and last_spoken state cleared properly, so the system didn't keep announcing phantom objects.
+
+Finally, dealing with external dependencies and environment setup added its own layer of complexity. Relying on a custom rpi_vision library meant I had to ensure it was correctly installed and compatible with my specific Raspberry Pi setup. Integrating festival --tts for speech output involved dealing with subprocess.Popen and handling potential FileNotFoundError issues, which just added more points of failure to manage.
+
+## OCR Challenges
+My experience with the OCR code brought its own set of unique difficulties.
+
+One of the biggest headaches was image preprocessing for OCR. Getting the cv2.adaptiveThreshold parameters right was crucial. Different lighting, text sizes, or even paper types meant constantly tweaking those block size and constant C values. Sometimes I even considered adding more preprocessing steps like blurring or morphological operations to improve accuracy, but that would just add more computational overhead. Choosing the (640, 480) resolution was a compromise between getting clear enough text and not completely bogging down the Pi's performance.
+
+Then there was the sheer accuracy and limitations of Pytesseract itself. It's fantastic for clear, printed text, but I quickly learned its limitations with different fonts, especially anything handwritten or highly stylized. And if the document had a complex layout, Pytesseract could really struggle with identifying text blocks correctly. I also had to play around with the confidence threshold for detected text; too high and I'd miss valid text, too low and I'd get a lot of junk.
+
+Real-time OCR performance was the most significant hurdle here. I quickly realized that running pytesseract.image_to_data on every single frame would kill the frame rate and make the application completely unusable. That's why I implemented the ocr_enabled flag and the 't' key press trigger – it was my way of letting the user decide when to run OCR, rather than trying to do it continuously. If I had to do continuous OCR, I'd need a completely different strategy, perhaps processing only every Nth frame or looking into dedicated hardware accelerators.
+
+Finally, the integration with Tkinter and OpenCV brought its usual share of pain points. Converting images between NumPy arrays (OpenCV), PIL Images, and Tkinter PhotoImages always required careful attention, especially getting the color channels right (BGR to RGB). And drawing those bounding boxes and text overlays on the OpenCV image meant I had to precisely map coordinates, which could get tricky if the image was resized for display.
+
+Overall, both projects really highlighted the common challenges of real-time computer vision on embedded systems. It's a constant balancing act of performance, accuracy, and user experience, with a lot of parameter tuning, error handling, and wrestling with external libraries along the way.
+
 # First Milestone - RasPI
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OAWN1qmHV5M?si=2GBFiyWOyTis4gh7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## Progress
-As I progress, I'll find more purposes for the Smart Glasses but as of right now, I want the glasses to be able to detect objects in front of them, read text, and take photos/videos that will be uploaded to either computer or web. So far, I've setup my Raspberry Pi and connected it to my computer via Tiger VNC. The main difficutly I had with Tiger VNC was the wifi. TigerVNC is a remote display system that allows you to control a computer's desktop from another device. It works by using a client-server model, where the server shares its screen and the client displays and controls it. TigerVNC utilizes the Remote Framebuffer protocol (RFB) to transmit screen updates and user input (keyboard and mouse) between the server and client. Essentially, I can remotely connect my laptop to the Pi without needing a nest of cables. Other than that, I just needed to plug in a bunch of cables.
+## Summary
+My project revolves around developing Smart Glasses with various functionalities. Currently, my primary goals for the glasses are object detection, text reading (OCR), and the ability to capture photos/videos for upload to a computer or the web. To get started, I've successfully set up my Raspberry Pi and established a remote connection to it using TigerVNC. This remote display system, which operates on a client-server model using the Remote Framebuffer (RFB) protocol, allows me to control the Pi's desktop from my laptop, effectively eliminating the need for a tangle of physical cables.
+
+## Challenges
+
+The main difficulty I encountered during the initial setup was specifically with TigerVNC and its reliance on Wi-Fi. Establishing and maintaining a stable, performant Wi-Fi connection for the remote desktop proved to be the primary hurdle. Beyond that, the setup largely involved straightforward cable connections.
 
 ## Schematics 
 
