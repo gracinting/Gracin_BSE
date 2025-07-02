@@ -29,6 +29,12 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+
 ## Progress
 Since my last update, I’ve made significant technical progress that brings the Smart Glasses closer to being a functional assistive tool. I successfully installed TensorFlow 2 on the Raspberry Pi, which lays the foundation for implementing real-time object detection. I also integrated OCR (Optical Character Recognition) capabilities using adaptive thresholding, which dramatically improved text readability in various lighting conditions—a crucial step for reading signs, labels, or printed documents through the glasses.
 
@@ -197,11 +203,6 @@ window.mainloop()
   </tr>
 </table>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen>
-  </iframe>
 
 
 ## Code
