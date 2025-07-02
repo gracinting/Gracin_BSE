@@ -613,6 +613,10 @@ The main difficulty I encountered during the initial setup was specifically with
 
 #### Raspberry Pi
 
+<a href="https://www.amazon.com/seeed-studio-Raspberry-Computer-Workstation/dp/B07WBZM4K9">
+  <img src="images/RasPi_Schematic.png" width="750" height="500" alt="Starter Preview">
+</a>
+
 <img src="images/RasPi_Schematic.png" width="600" height="400">
 
 
@@ -640,6 +644,13 @@ This starter project was designed to teach the fundamentals of soldering through
 
 Ideal for beginners, this starter project taught me soldering and general electric principles. 
 
+<a href="https://www.amazon.com/Classic-Electronic-Soldering-Tetris-Machine/dp/B07HB3HPPJ?th=1">
+  <img src="images/Starter_preview_trans.png" width="750" height="500" alt="Starter Preview">
+</a>
+
+<a href="https://www.amazon.ae/Gxcdizx-Hand-held-Practise-Soldering-Electronics/dp/B0851HFNYM">
+  <img src="images/starter_schematic.jpg" width="750" height="500" alt="Starter Preview">
+</a>
 
 <img src="images/Starter_preview_trans.png" width="750" height="500">
 
