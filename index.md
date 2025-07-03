@@ -629,11 +629,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| RaspberryPi 4 model B kit | Includes Raspberry Pi 4 4GB Model B with 1.5GHz 64-bit quad-core CPU (4GB RAM)
-Includes Pre-Loaded 32GB EVO+ Micro SD Card (Class 10), USB MicroSD Card Reader
-CanaKit Premium High-Gloss Raspberry Pi 4 Case with Integrated Fan Mount, CanaKit Low Noise Bearing System Fan
-CanaKit 3.5A USB-C Raspberry Pi 4 Power Supply (US Plug) with Noise Filter, Set of Heat Sinks, Display Cable - 6 foot (Supports up to 4K60p)
-CanaKit USB-C PiSwitch (On/Off Power Switch for Raspberry Pi 4) | $119.99 | <a href="https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Xksc4QMnpl0XTxlxg-mR1l-LRepignyGXtdycKSCy1zH3TofbLnnDyvhzEkm3qCQFKqWFnb_B6lg5TjnoWBa7SDh0j3fnHn341W9RowXBbD79pFmzFR87S_95JkIG9v_be2VcMpIcZBAQdALpdI6p2rvVNP6xx_vyfJFr-6t7JWrpvH83xXrZ-zhWDRh7WUBYLmIvtQ31BStXOR83C7lEnlXnN56lF-Yd4c4I8Nzk-Y.N_5m7gZwFLjKuNoCDSVDeAxPcwoq5sGhuWRbEqoUobE&dib_tag=se&keywords=canakit%2Braspberry%2Bpi%2B4%2Bmodel%2Bb&qid=1751570356&sr=8-1&th=1"> Link </a> |
+| RaspberryPi 4 model B kit | Includes Raspberry Pi 4 4GB Model B with 1.5GHz 64-bit quad-core CPU (4GB RAM). Includes Pre-Loaded 32GB EVO+ Micro SD Card (Class 10), USB MicroSD Card Reader. CanaKit Premium High-Gloss Raspberry Pi 4 Case with Integrated Fan Mount, CanaKit Low Noise Bearing System Fan. CanaKit 3.5A USB-C Raspberry Pi 4 Power. Supply (US Plug) with Noise Filter, Set of Heat Sinks, Display Cable - 6 foot (Supports up to 4K60p). CanaKit USB-C PiSwitch (On/Off Power Switch for Raspberry Pi 4) | $119.99 | <a href="https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Xksc4QMnpl0XTxlxg-mR1l-LRepignyGXtdycKSCy1zH3TofbLnnDyvhzEkm3qCQFKqWFnb_B6lg5TjnoWBa7SDh0j3fnHn341W9RowXBbD79pFmzFR87S_95JkIG9v_be2VcMpIcZBAQdALpdI6p2rvVNP6xx_vyfJFr-6t7JWrpvH83xXrZ-zhWDRh7WUBYLmIvtQ31BStXOR83C7lEnlXnN56lF-Yd4c4I8Nzk-Y.N_5m7gZwFLjKuNoCDSVDeAxPcwoq5sGhuWRbEqoUobE&dib_tag=se&keywords=canakit%2Braspberry%2Bpi%2B4%2Bmodel%2Bb&qid=1751570356&sr=8-1&th=1"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
