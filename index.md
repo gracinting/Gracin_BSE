@@ -13,7 +13,7 @@ Smart glasses are wearable devices that combine traditional eyewear with advance
 
 <!-- ![Headstone Image](logo.svg)-->
   
- # Final Milestone
+# Final Milestone
 
 ## Acomplishments
 I've finally tied everything together. As of right now, the Pi is mounted onto my arm while the battery pack rests in my pocket. I've designed my own custom case for the Pi, which helps attatch to an arm band. In addition, I've designed my own custom clip for the camera to attatch to the glasses itself.
