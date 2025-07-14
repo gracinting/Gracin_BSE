@@ -18,7 +18,7 @@ Smart glasses are wearable devices that combine traditional eyewear with advance
 ## Acomplishments
 I've finally tied everything together. As of right now, the Pi is mounted onto my arm while the battery pack rests in my pocket. I've designed my own custom case for the Pi, which helps attatch to an arm band. In addition, I've designed my own custom clip for the camera to attatch to the glasses itself.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
