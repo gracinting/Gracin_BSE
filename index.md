@@ -48,9 +48,28 @@ Binary Thresholding uses a single global value. Pixels brighter than the thresho
 
 Adaptive Thresholding calculates thresholds for small regions of the image. This means different areas of the image can have different threshold values, making it much more effective in uneven lighting conditions—like reading a sign outdoors with shadows.
 
-## Code for Adaptive Threshold
-This is the isolated for the OCR with the Adaptive Threshold. The program takes in frames from the Video Camera and then applies multiple filters and thresholds to achieve the black and white look. Then when the user clicks 't' it runs the ocr via pytesseract.
-```python3
+# Adaptive Threshold with OCR Overlay
+
+This Python script demonstrates a real-time computer vision application using a Raspberry Pi camera (`picamera2`), OpenCV (`cv2`) for image processing, Tesseract OCR (`pytesseract`) for text detection, and `tkinter` for displaying the video feed with OCR results.
+
+## Key Features:
+
+* **Real-time Camera Feed:** Captures frames from a Raspberry Pi camera.
+* **Grayscale Conversion & Adaptive Thresholding:** Processes frames to enhance text regions.
+* **On-Demand OCR:** Toggles OCR execution with a key press ('t') to avoid continuous processing overhead.
+* **OCR Overlay:** Draws bounding boxes and detected text directly onto the processed video feed.
+* **Tkinter GUI:** Displays the processed video stream in a simple GUI window.
+
+## How it Works:
+
+The script continuously captures frames. When the 't' key is pressed, it triggers a one-time OCR analysis on the current frame. The detected text and its location are then displayed on subsequent frames until 't' is pressed again for a new scan. This allows for efficient, targeted text recognition without impacting the live video feed's performance excessively.
+
+---
+
+## Source Code:
+
+<div class="code-container">
+  <pre><code class="language-python">
 import cv2
 import numpy as np
 from picamera2 import Picamera2
@@ -160,7 +179,7 @@ def update_frame():
     print (f"Time taken : {seconds:.3f} seconds")
     
     # Calculate and print frames per second
-    fps  = 1 / seconds
+    fps = 1 / seconds
     print(f"Estimated frames per second : {fps:.1f}")
 
 # Bind the '<Key>' event to the on_key_press function.
@@ -171,7 +190,26 @@ window.bind('<Key>', on_key_press)
 update_frame()
 # Start the Tkinter event loop
 window.mainloop()
-```
+  </code></pre>
+</div>
+
+---
+
+## Another Program:
+
+*(You would place your second program's description and code block here, following the same structure.)*
+
+```markdown
+### Program 2: [Name of Second Program]
+
+Brief description of your second program.
+
+<div class="code-container">
+  <pre><code class="language-python">
+    # Your second Python program's code goes here
+    # Remember to use `language-python` for Python
+  </code></pre>
+</div>
 
 ## Sample Images
 
