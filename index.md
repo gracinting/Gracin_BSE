@@ -47,12 +47,8 @@ Thresholding is used to convert grayscale images into binary (black and white) i
 Binary Thresholding uses a single global value. Pixels brighter than the threshold become white; darker pixels become black. This works well in consistent lighting but fails when the image has shadows or varying brightness.
 
 Adaptive Thresholding calculates thresholds for small regions of the image. This means different areas of the image can have different threshold values, making it much more effective in uneven lighting conditions—like reading a sign outdoors with shadows.
----
-layout: default
-title: My Robotics Project Code
----
 
-# My Robotics Project Code
+# My  Project Code
 
 This page showcases the core Python code for two major components of my robotics project: an Adaptive Thresholding with OCR Overlay application, and a MobileNetV2-based Real-time Object Detection Vision App.
 
