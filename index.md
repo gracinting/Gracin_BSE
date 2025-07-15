@@ -48,17 +48,17 @@ Binary Thresholding uses a single global value. Pixels brighter than the thresho
 
 Adaptive Thresholding calculates thresholds for small regions of the image. This means different areas of the image can have different threshold values, making it much more effective in uneven lighting conditions—like reading a sign outdoors with shadows.
 
-# My  Project Code
+## My  Project Code
 
 This page showcases the core Python code for two major components of my robotics project: an Adaptive Thresholding with OCR Overlay application, and a MobileNetV2-based Real-time Object Detection Vision App.
 
 ---
 
-## 1. Adaptive Threshold with OCR Overlay (Python)
+### 1. Adaptive Threshold with OCR Overlay (Python)
 
 This Python script demonstrates a real-time computer vision application using a Raspberry Pi camera (`picamera2`), OpenCV (`cv2`) for image processing, Tesseract OCR (`pytesseract`) for text detection, and `tkinter` for displaying the video feed with OCR results.
 
-### Key Features:
+#### Key Features:
 
 * **Real-time Camera Feed:** Captures frames from a Raspberry Pi camera.
 * **Grayscale Conversion & Adaptive Thresholding:** Processes frames to enhance text regions.
@@ -66,13 +66,13 @@ This Python script demonstrates a real-time computer vision application using a 
 * **OCR Overlay:** Draws bounding boxes and detected text directly onto the processed video feed.
 * **Tkinter GUI:** Displays the processed video stream in a simple GUI window.
 
-### How it Works:
+#### How it Works:
 
 The script continuously captures frames. When the 't' key is pressed, it triggers a one-time OCR analysis on the current frame. The detected text and its location are then displayed on subsequent frames until 't' is pressed again for a new scan. This allows for efficient, targeted text recognition without impacting the live video feed's performance excessively.
 
 ---
 
-### Source Code: Adaptive Threshold with OCR
+#### Source Code: Adaptive Threshold with OCR
 
 <div class="code-container">
   <pre>
@@ -187,25 +187,16 @@ def update_frame():
     # Calculate and print frames per second
     fps = 1 / seconds
     print(f"Estimated frames per second : {fps:.1f}")
-
-# Bind the '<Key>' event to the on_key_press function.
-# This means on_key_press will be called whenever any key is pressed.
-window.bind('<Key>', on_key_press)
-
-# Start the frame update loop
-update_frame()
-# Start the Tkinter event loop
-window.mainloop()
   </pre>
 </div>
 
 ---
 
-## 2. MobileNetV2 Real-time Object Detection Vision App
+### 2. MobileNetV2 Real-time Object Detection Vision App
 
 This advanced Python application leverages a pre-trained MobileNetV2 model for real-time object detection using a Raspberry Pi camera. It features dynamic font sizing for detected objects, a toggle for detection, and speech output for persistent detections.
 
-### Key Features:
+#### Key Features:
 
 * **Real-time Object Detection:** Utilizes MobileNetV2 to identify objects in the camera feed.
 * **Configurable Camera Stream:** Integrates `picamera2` for efficient video capture.
@@ -215,13 +206,13 @@ This advanced Python application leverages a pre-trained MobileNetV2 model for r
 * **Speech Output:** Announces detected objects using `festival` TTS if installed.
 * **Performance Monitoring:** Displays real-time FPS and CPU temperature (on Raspberry Pi).
 
-### How it Works:
+#### How it Works:
 
 The `VisionApp` class manages the camera, the MobileNetV2 model, and the Tkinter GUI. It continuously fetches frames, and if detection is enabled, it feeds them to the model for inference. Detected objects are then displayed on the screen with text and confidence levels. A history of `last_seen` objects helps filter out fleeting detections, ensuring only persistent objects trigger an audio announcement.
 
 ---
 
-### Source Code: MobileNetV2 Vision App
+#### Source Code: MobileNetV2 Vision App
 
 <div class="code-container">
   <pre>
