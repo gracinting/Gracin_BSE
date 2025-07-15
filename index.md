@@ -48,7 +48,6 @@ Binary Thresholding uses a single global value. Pixels brighter than the thresho
 
 Adaptive Thresholding calculates thresholds for small regions of the image. This means different areas of the image can have different threshold values, making it much more effective in uneven lighting conditions—like reading a sign outdoors with shadows.
 
-
 ---
 layout: default
 title: My Robotics Project Code
@@ -64,24 +63,10 @@ This page showcases the core Python code for two major components of my robotics
 
 This Python script demonstrates a real-time computer vision application using a Raspberry Pi camera (`picamera2`), OpenCV (`cv2`) for image processing, Tesseract OCR (`pytesseract`) for text detection, and `tkinter` for displaying the video feed with OCR results.
 
-### Key Features:
-
-* **Real-time Camera Feed:** Captures frames from a Raspberry Pi camera.
-* **Grayscale Conversion & Adaptive Thresholding:** Processes frames to enhance text regions.
-* **On-Demand OCR:** Toggles OCR execution with a key press ('t') to avoid continuous processing overhead.
-* **OCR Overlay:** Draws bounding boxes and detected text directly onto the processed video feed.
-* **Tkinter GUI:** Displays the processed video stream in a simple GUI window.
-
-### How it Works:
-
-The script continuously captures frames. When the 't' key is pressed, it triggers a one-time OCR analysis on the current frame. The detected text and its location are then displayed on subsequent frames until 't' is pressed again for a new scan. This allows for efficient, targeted text recognition without impacting the live video feed's performance excessively.
-
----
-
 ### Source Code: Adaptive Threshold with OCR
 
 <div class="code-container">
-  <pre><code class="language-python">
+  <pre>
 import cv2
 import numpy as np
 from picamera2 import Picamera2
@@ -202,7 +187,7 @@ window.bind('<Key>', on_key_press)
 update_frame()
 # Start the Tkinter event loop
 window.mainloop()
-  </code></pre>
+  </pre>
 </div>
 
 ---
@@ -211,26 +196,10 @@ window.mainloop()
 
 This advanced Python application leverages a pre-trained MobileNetV2 model for real-time object detection using a Raspberry Pi camera. It features dynamic font sizing for detected objects, a toggle for detection, and speech output for persistent detections.
 
-### Key Features:
-
-* **Real-time Object Detection:** Utilizes MobileNetV2 to identify objects in the camera feed.
-* **Configurable Camera Stream:** Integrates `picamera2` for efficient video capture.
-* **Dynamic UI:** Resizes fonts and elements based on window size for responsiveness.
-* **Toggleable Detection:** Pressing 'O' (or 'o') enables/disables object detection to manage resource usage.
-* **Persistence Filtering:** Only reports objects that are consistently detected, reducing false positives.
-* **Speech Output:** Announces detected objects using `festival` TTS if installed.
-* **Performance Monitoring:** Displays real-time FPS and CPU temperature (on Raspberry Pi).
-
-### How it Works:
-
-The `VisionApp` class manages the camera, the MobileNetV2 model, and the Tkinter GUI. It continuously fetches frames, and if detection is enabled, it feeds them to the model for inference. Detected objects are then displayed on the screen with text and confidence levels. A history of `last_seen` objects helps filter out fleeting detections, ensuring only persistent objects trigger an audio announcement.
-
----
-
 ### Source Code: MobileNetV2 Vision App
 
 <div class="code-container">
-  <pre><code class="language-python">
+  <pre>
 # SPDX-FileCopyrightText: 2021 Limor Fried/ladyada for Adafruit Industries
 # SPDX-FileCopyrightText: 2021 Melissa LeBlanc-Washington for Adafruit Industries
 #
@@ -257,7 +226,7 @@ PERSISTANCE_THRESHOLD = 0.25  # what percentage of the time we have to have seen
 def dont_quit(signal_num, frame):
     """Signal handler to prevent quitting on SIGHUP."""
     print(f'Caught signal: {signal_num}')
-signal.signal(signal.SIGHUP, dont_quit)
+signal.signal(os.WEXITSTATUS(1))
 
 # App components (assuming these are installed or available)
 try:
@@ -591,7 +560,7 @@ if __name__ == "__main__":
         if app.capture_manager:
             app.capture_manager.stop()
         sys.exit(1)
-  </code></pre>
+  </pre>
 </div>
 
 ## Object Detection Challenges
