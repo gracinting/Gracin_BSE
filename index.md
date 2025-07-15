@@ -52,9 +52,6 @@ Adaptive Thresholding calculates thresholds for small regions of the image. This
 
 <div class="code-container">
   <pre>
-This is the raw content of my file.
-It will appear exactly as typed here,
-preserving spaces and line breaks.
   </pre>
 </div>
 
