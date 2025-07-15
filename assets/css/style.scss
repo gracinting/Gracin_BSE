@@ -1,18 +1,29 @@
-/* Basic body styles for overall page readability */
+---
+# This YAML front matter tells Jekyll to process this file with Sass
+---
+
+/* You can optionally import the theme's default styles here if you want to
+   tweak them directly, but for adding new elements like .code-container,
+   it's often not necessary and can sometimes cause conflicts if not done carefully.
+   So, we'll just add our custom styles directly. */
+
+/* Basic body styles - you can keep these for general page improvements
+   or remove if Architect's default body styles are sufficient */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 960px; /* Max width for your content */
+    max-width: 960px; /* Adjust max-width as Architect might have its own */
     margin: 0 auto; /* Center the content */
     padding: 20px;
-    background-color: #f4f7f6; /* Light background for the page */
+    background-color: #f4f7f6; /* Light background for the page, Architect might override */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    // Architect theme will handle these, but you can override if needed
+    // color: #2c3e50;
+    // margin-top: 1.5em;
+    // margin-bottom: 0.5em;
 }
 
 /* Styles for the custom code container */
@@ -23,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: scroll; /* Enable vertical scrolling */
     overflow-x: auto;   /* Enable horizontal scrolling if lines are too long */
     border: 1px solid #ddd; /* Light border */
-    background-color: #2d2d2d; /* Dark background for code, matching Okaidia theme */
+    background-color: #fcfcfc; /* A very light off-white for raw code */
     padding: 15px;
     margin: 30px auto; /* Center it and add vertical space */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
@@ -33,39 +44,35 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5; /* Good line spacing */
 }
 
-/* Ensure default padding/margin from pre and code tags are reset */
+/* Ensure default padding/margin from pre tags are reset */
 .code-container pre {
     margin: 0;
     padding: 0;
+    color: #333; /* Dark gray text for readability on light background */
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; /* Still use a monospaced font! */
+    white-space: pre; /* Ensure whitespace is preserved */
+    word-wrap: normal; /* Prevent long lines from wrapping */
 }
 
-/* If you use Prism.js line numbers, you might need to adjust padding for them */
-/* .code-container pre.line-numbers {
-    padding-left: 3.8em;
-} */
 
-/* Ensure text in code blocks uses a monospaced font */
-.code-container code {
-    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
-    /* Color handled by Prism.js theme */
-}
-
-/* Optional: Improve link styling */
+/* Optional: Improve link styling - Architect has its own link styles,
+   so this might be an override or supplemental */
 a {
-    color: #3498db;
-    text-decoration: none;
+    color: #3498db; // Example blue
+    // text-decoration: none; // Architect theme might handle this
 }
 
 a:hover {
-    text-decoration: underline;
+    // text-decoration: underline; // Architect theme might handle this
 }
 
-/* Optional: Footer styling */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-    color: #777;
-    font-size: 0.85em;
-}
+/* Optional: Footer styling - Architect has its own footer,
+   so this might be an override or supplemental */
+// footer {
+//     text-align: center;
+//     margin-top: 50px;
+//     padding-top: 20px;
+//     border-top: 1px solid #eee;
+//     color: #777;
+//     font-size: 0.85em;
+// }
