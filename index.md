@@ -48,11 +48,23 @@ Binary Thresholding uses a single global value. Pixels brighter than the thresho
 
 Adaptive Thresholding calculates thresholds for small regions of the image. This means different areas of the image can have different threshold values, making it much more effective in uneven lighting conditions—like reading a sign outdoors with shadows.
 
-# Adaptive Threshold with OCR Overlay
+
+---
+layout: default
+title: My Robotics Project Code
+---
+
+# My Robotics Project Code
+
+This page showcases the core Python code for two major components of my robotics project: an Adaptive Thresholding with OCR Overlay application, and a MobileNetV2-based Real-time Object Detection Vision App.
+
+---
+
+## 1. Adaptive Threshold with OCR Overlay (Python)
 
 This Python script demonstrates a real-time computer vision application using a Raspberry Pi camera (`picamera2`), OpenCV (`cv2`) for image processing, Tesseract OCR (`pytesseract`) for text detection, and `tkinter` for displaying the video feed with OCR results.
 
-## Key Features:
+### Key Features:
 
 * **Real-time Camera Feed:** Captures frames from a Raspberry Pi camera.
 * **Grayscale Conversion & Adaptive Thresholding:** Processes frames to enhance text regions.
@@ -60,13 +72,13 @@ This Python script demonstrates a real-time computer vision application using a 
 * **OCR Overlay:** Draws bounding boxes and detected text directly onto the processed video feed.
 * **Tkinter GUI:** Displays the processed video stream in a simple GUI window.
 
-## How it Works:
+### How it Works:
 
 The script continuously captures frames. When the 't' key is pressed, it triggers a one-time OCR analysis on the current frame. The detected text and its location are then displayed on subsequent frames until 't' is pressed again for a new scan. This allows for efficient, targeted text recognition without impacting the live video feed's performance excessively.
 
 ---
 
-## Source Code:
+### Source Code: Adaptive Threshold with OCR
 
 <div class="code-container">
   <pre><code class="language-python">
@@ -195,47 +207,30 @@ window.mainloop()
 
 ---
 
-## Another Program:
+## 2. MobileNetV2 Real-time Object Detection Vision App
 
-*(You would place your second program's description and code block here, following the same structure.)*
+This advanced Python application leverages a pre-trained MobileNetV2 model for real-time object detection using a Raspberry Pi camera. It features dynamic font sizing for detected objects, a toggle for detection, and speech output for persistent detections.
 
-```markdown
-### Program 2: [Name of Second Program]
+### Key Features:
 
-Brief description of your second program.
+* **Real-time Object Detection:** Utilizes MobileNetV2 to identify objects in the camera feed.
+* **Configurable Camera Stream:** Integrates `picamera2` for efficient video capture.
+* **Dynamic UI:** Resizes fonts and elements based on window size for responsiveness.
+* **Toggleable Detection:** Pressing 'O' (or 'o') enables/disables object detection to manage resource usage.
+* **Persistence Filtering:** Only reports objects that are consistently detected, reducing false positives.
+* **Speech Output:** Announces detected objects using `festival` TTS if installed.
+* **Performance Monitoring:** Displays real-time FPS and CPU temperature (on Raspberry Pi).
+
+### How it Works:
+
+The `VisionApp` class manages the camera, the MobileNetV2 model, and the Tkinter GUI. It continuously fetches frames, and if detection is enabled, it feeds them to the model for inference. Detected objects are then displayed on the screen with text and confidence levels. A history of `last_seen` objects helps filter out fleeting detections, ensuring only persistent objects trigger an audio announcement.
+
+---
+
+### Source Code: MobileNetV2 Vision App
 
 <div class="code-container">
   <pre><code class="language-python">
-    # Your second Python program's code goes here
-    # Remember to use `language-python` for Python
-  </code></pre>
-</div>
-
-## Sample Images
-
-<table>
-  <tr>
-    <td><img src="images/sample_og.png" width="250" height="250" alt="Hello World Original"></td>
-    <td>This is the original image with red text on a green background.</td>
-  </tr>
-  <tr>
-    <td><img src="images/sample_binary.png" width="250" height="250" alt="Hello World Binary Threshold"></td>
-    <td>This image shows a handwritten "Hello World" in black on a white background, a result of a binary threshold.</td>
-  </tr>
-  <tr>
-    <td><img src="images/sample_adaptive.png" width="250" height="250" alt="Hello World Adaptive Threshold"></td>
-    <td>This image displays "Hello World" with a black outline and white fill, an adaptive threshold was applied.</td>
-  </tr>
-</table>
-
-
-
-## Code
-Here's the isolated Object Detection code. If you want to run this yourself, ensure that you have downloaded the correct packages via
-[this website.](https://learn.adafruit.com/running-tensorflow-lite-on-the-raspberry-pi-4/overview)
-A lot of this is accomplished by the pre-configured package but I added some slight modifications. For one, the user has to click 'o' to enable and disable the Object Detection. In addition, there were some configuring modifications I needed to do to make my future life easier.
-
-```python3
 # SPDX-FileCopyrightText: 2021 Limor Fried/ladyada for Adafruit Industries
 # SPDX-FileCopyrightText: 2021 Melissa LeBlanc-Washington for Adafruit Industries
 #
@@ -256,12 +251,12 @@ from PIL import Image, ImageTk, ImageOps
 # Suppress PIL's INFO messages
 logging.getLogger('PIL').setLevel(logging.WARNING)
 
-CONFIDENCE_THRESHOLD = 0.5   # at what confidence level do we say we detected a thing
+CONFIDENCE_THRESHOLD = 0.5    # at what confidence level do we say we detected a thing
 PERSISTANCE_THRESHOLD = 0.25  # what percentage of the time we have to have seen a thing
 
 def dont_quit(signal_num, frame):
-   """Signal handler to prevent quitting on SIGHUP."""
-   print(f'Caught signal: {signal_num}')
+    """Signal handler to prevent quitting on SIGHUP."""
+    print(f'Caught signal: {signal_num}')
 signal.signal(signal.SIGHUP, dont_quit)
 
 # App components (assuming these are installed or available)
@@ -366,7 +361,7 @@ class VisionApp:
 
             # Center the image on the canvas
             self.canvas.create_image(canvas_width / 2, canvas_height / 2,
-                                     image=self.tk_splash_img, anchor=tk.CENTER)
+                                      image=self.tk_splash_img, anchor=tk.CENTER)
             self.root.update() # Update the display to show splash screen
         except Exception as e:
             logging.error(f"Error loading or displaying splash screen: {e}")
@@ -466,7 +461,7 @@ class VisionApp:
 
         # Center the image on the canvas
         self.canvas.create_image(canvas_width / 2, canvas_height / 2,
-                                 image=self.tk_img, anchor=tk.CENTER)
+                                  image=self.tk_img, anchor=tk.CENTER)
 
         timestamp = time.monotonic()
 
@@ -474,7 +469,7 @@ class VisionApp:
         status_text = "Detection: " + ("ON" if self.detection_enabled else "OFF")
         status_color = "green" if self.detection_enabled else "red"
         self.canvas.create_text(10, 10, text=status_text, fill=status_color,
-                                font=self.statusfont, anchor=tk.NW)
+                                 font=self.statusfont, anchor=tk.NW)
 
         if self.detection_enabled and self.model: # Only run detection if enabled and model is initialized
             if self.args.tflite:
@@ -488,12 +483,12 @@ class VisionApp:
             # Add FPS & temp on top corner of image
             fpstext = "%0.1f FPS" % (1/delta,)
             self.canvas.create_text(canvas_width - 10, 10, text=fpstext, fill="red",
-                                    font=self.smallfont, anchor=tk.NE)
+                                     font=self.smallfont, anchor=tk.NE)
             try:
                 temp = int(open("/sys/class/thermal/thermal_zone0/temp").read()) / 1000
                 temptext = f"{temp:.0f}°C"
                 self.canvas.create_text(canvas_width - 10, 30, text=temptext, fill="red",
-                                        font=self.smallfont, anchor=tk.NE)
+                                         font=self.smallfont, anchor=tk.NE)
             except OSError:
                 pass # Not on a Raspberry Pi or thermal zone not found
 
@@ -525,8 +520,8 @@ class VisionApp:
                     # Position at the bottom center of the screen
                     text_y_position = canvas_height - detecttext_font.metrics("linespace") - 10
                     self.canvas.create_text(canvas_width // 2, text_y_position,
-                                            text=detecttext, fill=detecttext_color,
-                                            font=detecttext_font, anchor=tk.S)
+                                             text=detecttext, fill=detecttext_color,
+                                             font=detecttext_font, anchor=tk.S)
 
                     if persistant_obj and self.last_spoken != detecttext:
                         try:
@@ -536,7 +531,7 @@ class VisionApp:
                             logging.warning("Festival TTS not found. Please install it if you want speech output.")
                         except Exception as e:
                             logging.error(f"Error calling festival TTS: {e}")
-                    break # Only show the highest confidence detection
+                        break # Only show the highest confidence detection
 
             if not detected_something:
                 self.last_seen.append(None)
@@ -596,7 +591,8 @@ if __name__ == "__main__":
         if app.capture_manager:
             app.capture_manager.stop()
         sys.exit(1)
-```
+  </code></pre>
+</div>
 
 ## Object Detection Challenges
 Developing the object detection code presented several hurdles for me, especially getting it to run smoothly on a Raspberry Pi.
