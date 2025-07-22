@@ -31,6 +31,10 @@ Coordination with mentors and peers was emphasized, with Gracin receiving constr
 Documentation & Presentation
 Detailed logs, schematics, and explanatory models were prepared to present the milestone clearly, indicating strong communication and documentation skills.
 
+<img src="images/base.png" width="750" height="500" alt="Starter Preview">
+<img src="images/case.png" width="750" height="500" alt="Starter Preview">
+<img src="images/camera_mount.png" width="750" height="500" alt="Starter Preview">
+
 ## Challenges
 Mechanical Tolerancing Issues
 Precision alignment and tight tolerances caused friction and misalignments—Gracin had to readjust design aspects to accommodate for machining variations.
