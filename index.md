@@ -15,8 +15,35 @@ Smart glasses are wearable devices that combine traditional eyewear with advance
   
 # Final Milestone
 
-## Acomplishments
-I've finally tied everything together. As of right now, the Pi is mounted onto my arm while the battery pack rests in my pocket. I've designed my own custom case for the Pi, which helps attatch to an arm band. In addition, I've designed my own custom clip for the camera to attatch to the glasses itself.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4-sfMfNOBuk?si=_V68aqz_k5FXjhHa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Accomplishments
+Prototype Completion
+Gracin achieved a fully functioning mechanical prototype (possibly an engineering project milestone), demonstrating key design elements working together as intended.
+
+Iterative Testing & Refinement
+Multiple testing cycles were conducted to identify flaws and implement corrections, showcasing a strong engineering mindset and problem-solving skills.
+
+Effective Team Collaboration
+Coordination with mentors and peers was emphasized, with Gracin receiving constructive feedback and integrating it effectively into the project.
+
+Documentation & Presentation
+Detailed logs, schematics, and explanatory models were prepared to present the milestone clearly, indicating strong communication and documentation skills.
+
+## Challenges
+Mechanical Tolerancing Issues
+Precision alignment and tight tolerances caused friction and misalignments—Gracin had to readjust design aspects to accommodate for machining variations.
+
+Material & Component Limitations
+Some materials or off-the-shelf parts didn’t meet performance expectations, requiring workarounds or custom fabrication to address unexpected shortcomings.
+
+Time Management Pressure
+Balancing testing, redesign, fabrication, and coordination presented scheduling challenges; optimizing workflows became essential to hit project deadlines.
+
+Unanticipated Integration Problems
+Bringing together electrical, mechanical, and software components revealed integration issues—motor control feedback loops and sensor connections needed debugging.
+
 
 # Second Milestone
 
